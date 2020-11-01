@@ -4,27 +4,27 @@
 #include "stdafx.h"
 #include <conio.h>
 
-//создание классов, атрибутов, конструкторов, создание и уничтожение статических  объектов
+//Г±fhhd
 
 class Point{
 public:
-	int x, y; //атрибуты
-	Point(){ //конструктор
+	int x, y; //Г ГІГ°ГЁГЎГіГІГ»
+	Point(){ //ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°
 		printf("Point()\n");
 		x = 0;
 		y = 0;
 	}
-	Point(int x, int y){ //конструктор с параметрами
+	Point(int x, int y){ //ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° Г± ГЇГ Г°Г Г¬ГҐГІГ°Г Г¬ГЁ
 		printf("Point(int x, int y)\n");
 		this->x = x;
 		this->y = y;
 	}
-	Point(const Point &p){ //копирующий конструктор 
+	Point(const Point &p){ //ГЄГ®ГЇГЁГ°ГіГѕГ№ГЁГ© ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° 
 		printf("Point(const Point &p)\n");
 		x = p.x;
 		y = p.y;
 	}
-	~Point(){ //деструктор
+	~Point(){ //Г¤ГҐГ±ГІГ°ГіГЄГІГ®Г°
 		printf("%d, %d\n", x, y);
 		printf("~Point()\n");
 	}
